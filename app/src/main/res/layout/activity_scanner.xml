@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.afinal.Activity.ScannerActivity">
+
+    <LinearLayout
+        android:id="@+id/linear11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xyz"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xyz"
+           />
+
+
+    </LinearLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/linear11"
+        android:id="@+id/scroll"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/modifylayout"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            tools:context="com.mapolbs.vizibeeapp.Activity.DefaultForm">
+            <ViewFlipper
+                android:id="@+id/view_flipper"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:layout_marginBottom="100dp">
+
+
+            </ViewFlipper>
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f4f4f4"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/imgprojectlogo" />
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f4f4f4"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dynamic testing"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/txtprojectname" />
+            </TableRow>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/lilayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#EBEFF2"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical|right"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/default_size_18dp"
+            android:textStyle="bold"
+            android:textColor="#3C8DBC"
+            android:id="@+id/btnnext"
+            android:background="@drawable/next"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/default_size_18dp"
+            android:textStyle="bold"
+            android:textColor="#3C8DBC"
+            android:id="@+id/btnprevious"
+            android:background="@drawable/previous"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnsubmit"
+            android:background="@drawable/btsubmit"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnnext"
+            android:layout_toStartOf="@+id/btnnext" />
+
+
+
+    </RelativeLayout>
+    <Button
+android:visibility="gone"
+        android:id="@+id/buttonScan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorcyan"
+        android:text="Scan QR Code" />
+
+</RelativeLayout>

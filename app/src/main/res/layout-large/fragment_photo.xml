@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.afinal.Fragments.photoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txtsignature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get sign"
+        android:textSize="20sp"
+        android:layout_margin="30dp"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:background="@color/color20pink"/>
+
+</FrameLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="380dp"
+    android:orientation="vertical"
+    android:layout_margin="1dp"
+    android:background="@android:color/white">
+    <TextView
+        android:id="@+id/titlesignature"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colortitle2"
+        android:text="Signature"
+        android:textStyle="italic"
+        android:textColor="@android:color/white"
+        android:textSize="23dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:id="@+id/canvasLayout"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_below="@+id/titlesignature"/>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="@android:color/white"
+        android:layout_below="@+id/canvasLayout"
+        android:layout_marginBottom="0.6dp"
+      ><TextView
+        android:layout_width="1dp"
+        android:layout_height="35dp"
+        android:background="#ffffff"/>
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@color/colorBlack" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:background="#ffffff"/>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:textAllCaps="false"
+            tools:ignore="ButtonStyle"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@color/colorBlack" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:background="#ffffff"/>
+        <Button
+            android:id="@+id/getsign"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:gravity="center"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@color/colorBlack" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:background="#ffffff"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

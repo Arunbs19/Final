@@ -1,0 +1,746 @@
+{
+    "logged_user": {
+        "logged_user_id": 72,
+        "logged_username": "SAM1001",
+        "logged_datetime": "2018-03-28 15:12:25",
+        "is_supervisor": 1,
+        "supervisor_id": "",
+        "supervisor_name": "",
+        "project_id": 4,
+        "project_name": "Sample",
+        "logo": "http:\/\/106.51.1.175\/survey\/public\/upload\/project\/4\/project_logo"
+    },
+    "project_settings": {
+        "AUTOMATIC_GEO_LOCIATON": "0"
+    },
+    "project_users": {
+        "1": "KAT1000",
+        "2": "KAT1001",
+        "3": "KAT1002",
+        "4": "KAT1003",
+        "5": "KAT1004",
+        "29": "NKA1000",
+        "30": "NKA1001",
+        "31": "NKA1002",
+        "32": "NKA1003",
+        "33": "NKA1004",
+        "34": "NKA1005",
+        "35": "NKA1006",
+        "36": "NKA1007",
+        "60": "TES1000",
+        "62": "KAT1028",
+        "71": "SAM1000",
+        "72": "SAM1001",
+        "73": "SAM1002",
+        "75": "SAM1003",
+        "386": "TMA1000",
+        "388": "SON1000"
+    },
+    "retailers": [
+        {
+            "id": 2262,
+            "user_id": 82,
+            "user_name": "suresh",
+            "supervisor_id": 72,
+            "supervisor_name": "rupesh",
+            "name": "Retailer 2",
+            "slug": "retailer-2",
+            "region_id": 5,
+            "region_name": "East",
+            "city_id": 12,
+            "city_name": "Kurnool",
+            "state_id": 4,
+            "state_name": "Andra Pradesh",
+            "country_id": 1,
+            "country_name": "India",
+            "retailer_code": "Ret 2",
+            "phone": null,
+            "column1": null,
+            "column3": null,
+            "column2": null
+        }
+    ],
+    "forms": [
+        {
+            "form_id": 25,
+            "title": "Select Retailer",
+            "description": "This form uses for user to select which retailer shop to survey",
+            "type": "DEFAULT",
+            "questions": [
+                {
+                    "id": 1693,
+                    "type": "qmdt",
+                    "title": "c",
+                    "is_required": 1,
+                    "target": "city_id",
+                    "hierarchy_code": "",
+                    "values": [
+                        {
+                            "code": 12,
+                            "name": "Kurnool"
+                        }
+                    ]
+                },
+                {
+                    "id": 1694,
+                    "type": "qmdts",
+                    "title": "Retailer",
+                    "is_required": 1,
+                    "target": "name",
+                    "hierarchy_code": "city_id",
+                    "values": [
+                        {
+                            "code": 2262,
+                            "name": "Retailer 2 > Ret 2",
+                            "city_id": 12
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "form_id": 28,
+            "title": "Survey Form-1",
+            "description": "",
+            "type": "SURVEY",
+            "questions": [
+                {
+                    "id": 2146,
+                    "type": "qmtr",
+                    "title": "Retailer Name",
+                    "values": [
+                        {
+                            "code": 2262,
+                            "name": "Retailer 2"
+                        }
+                    ]
+                },
+                {
+                    "id": 2147,
+                    "type": "qmtr",
+                    "title": "Retailer City",
+                    "values": [
+                        {
+                            "code": 2262,
+                            "name": "Kurnool"
+                        }
+                    ]
+                },
+                {
+                    "id": 2148,
+                    "type": "qmtr",
+                    "title": "Retailer State",
+                    "values": [
+                        {
+                            "code": 2262,
+                            "name": "Andra Pradesh"
+                        }
+                    ]
+                },
+                {
+                    "id": 2149,
+                    "type": "qmir",
+                    "title": "Client Image",
+                    "image_path": "http:\/\/106.51.1.175\/survey\/public\/upload\/qmir\/1526\/qmir.jpg"
+                },
+                {
+                    "id": 2150,
+                    "type": "qmds",
+                    "title": "drop",
+                    "is_other": 1,
+                    "is_section": null,
+                    "is_required": 0,
+                    "is_sub_question": 1,
+                    "values": [
+                        {
+                            "code": 2894,
+                            "title": "date",
+                            "form_id": null,
+                            "sub_questions": [
+                                {
+                                    "id": 2150,
+                                    "type": "qmda",
+                                    "title": "date",
+                                    "is_required": 0,
+                                    "validation": {
+                                        "type": "QMDA-FUTUREDATE",
+                                        "values": "0"
+                                    },
+                                    "sub_question_id": 2151
+                                }
+                            ]
+                        },
+                        {
+                            "code": 2895,
+                            "title": "time",
+                            "form_id": null,
+                            "sub_questions": [
+                                {
+                                    "id": 2150,
+                                    "type": "qmti",
+                                    "title": "time",
+                                    "is_required": 0,
+                                    "sub_question_id": 2152
+                                }
+                            ]
+                        },
+                        {
+                            "code": 2896,
+                            "title": "choice",
+                            "form_id": null,
+                            "sub_questions": [
+                                {
+                                    "id": 2150,
+                                    "type": "qmrb",
+                                    "title": "choice",
+                                    "is_other": 0,
+                                    "is_section": null,
+                                    "is_required": 0,
+                                    "is_sub_question": null,
+                                    "values": [
+                                        {
+                                            "code": 2897,
+                                            "title": "Option 1"
+                                        }
+                                    ],
+                                    "sub_question_id": 2153
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2154,
+                    "type": "qmrb",
+                    "title": "radio",
+                    "is_other": 1,
+                    "is_section": null,
+                    "is_required": 0,
+                    "is_sub_question": 1,
+                    "values": [
+                        {
+                            "code": 2898,
+                            "title": "date",
+                            "form_id": null,
+                            "sub_questions": []
+                        },
+                        {
+                            "code": 2899,
+                            "title": "time",
+                            "form_id": null,
+                            "sub_questions": []
+                        },
+                        {
+                            "code": 2900,
+                            "title": "choice",
+                            "form_id": null,
+                            "sub_questions": []
+                        },
+                        {
+                            "code": 2901,
+                            "title": "Option 4",
+                            "form_id": null,
+                            "sub_questions": []
+                        },
+                        {
+                            "code": 2902,
+                            "title": "Option 5",
+                            "form_id": null,
+                            "sub_questions": []
+                        }
+                    ]
+                },
+                {
+                    "id": 2155,
+                    "type": "qmar",
+                    "title": "audio",
+                    "is_required": 0
+                },
+                {
+                    "id": 2156,
+                    "type": "qmbc",
+                    "title": "Barcode",
+                    "is_required": 0
+                }
+            ]
+        },
+        {
+            "form_id": 30,
+            "title": "Grid Itemlist",
+            "description": "",
+            "type": "GRID",
+            "grid_type": 1,
+            "filter1": "column1",
+            "filter2": "column2",
+            "filter1_values": [
+                {
+                    "code": "2016",
+                    "name": "2016"
+                },
+                {
+                    "code": "2017",
+                    "name": "2017"
+                }
+            ],
+            "filter2_values": [
+                {
+                    "code": "15000",
+                    "name": "15000"
+                },
+                {
+                    "code": "22000",
+                    "name": "22000"
+                },
+                {
+                    "code": "32500",
+                    "name": "32500"
+                }
+            ],
+            "values": [
+                {
+                    "code": 29,
+                    "name": "Nokia6",
+                    "column1": "2017",
+                    "column2": "15000"
+                },
+                {
+                    "code": 31,
+                    "name": "Iphone6",
+                    "column1": "2016",
+                    "column2": "22000"
+                },
+                {
+                    "code": 30,
+                    "name": "Oneplus5",
+                    "column1": "2017",
+                    "column2": "32500"
+                }
+            ],
+            "questions": [
+                {
+                    "id": 2144,
+                    "type": "qmda",
+                    "title": "Date",
+                    "is_required": 0,
+                    "validation": {
+                        "type": "QMDA-FUTUREDATE",
+                        "values": "0"
+                    }
+                },
+                {
+                    "id": 2145,
+                    "type": "qmbc",
+                    "title": "barcode",
+                    "is_required": 0
+                }
+            ]
+        },
+        {
+            "form_id": 41,
+            "title": "New Test Form",
+            "description": "",
+            "type": "SURVEY",
+            "questions": [
+                {
+                    "id": 2480,
+                    "type": "qmda",
+                    "title": "Joining Date",
+                    "is_required": 1,
+                    "validation": {
+                        "type": "QMDA-FUTUREDATE",
+                        "values": "1"
+                    }
+                },
+                {
+                    "id": 2481,
+                    "type": "qmtn",
+                    "title": "Number Box",
+                    "is_required": 1,
+                    "decimal": 0,
+                    "validation": {
+                        "type": "GREATER",
+                        "values": "5"
+                    }
+                },
+                {
+                    "id": 2482,
+                    "type": "qmgc",
+                    "title": "Grid Choice",
+                    "is_required": 0,
+                    "row_values": [
+                        {
+                            "code": 3035,
+                            "title": "Row 1"
+                        },
+                        {
+                            "code": 3036,
+                            "title": "Row 2"
+                        },
+                        {
+                            "code": 3037,
+                            "title": "Row 3"
+                        }
+                    ],
+                    "column_values": [
+                        {
+                            "code": 3038,
+                            "title": "Column 1"
+                        },
+                        {
+                            "code": 3039,
+                            "title": "Column 2"
+                        },
+                        {
+                            "code": 3040,
+                            "title": "Column 3"
+                        },
+                        {
+                            "code": 3041,
+                            "title": "Column 4"
+                        }
+                    ]
+                },
+                {
+                    "id": 2483,
+                    "type": "qmgm",
+                    "title": "Gride Multi",
+                    "is_required": 0,
+                    "row_values": [
+                        {
+                            "code": 3042,
+                            "title": "Row 1"
+                        },
+                        {
+                            "code": 3043,
+                            "title": "Row 2"
+                        },
+                        {
+                            "code": 3044,
+                            "title": "Row 3"
+                        }
+                    ],
+                    "column_values": [
+                        {
+                            "code": 3045,
+                            "title": "Column 1"
+                        },
+                        {
+                            "code": 3046,
+                            "title": "Column 2"
+                        },
+                        {
+                            "code": 3047,
+                            "title": "Column 3"
+                        },
+                        {
+                            "code": 3048,
+                            "title": "Column 4"
+                        },
+                        {
+                            "code": 3049,
+                            "title": "Column 5"
+                        }
+                    ]
+                },
+                {
+                    "id": 2484,
+                    "type": "qmyn",
+                    "title": "Yes Or No",
+                    "is_required": 0,
+                    "is_sub_question": 1,
+                    "values": [
+                        {
+                            "code": 3050,
+                            "title": "Yes",
+                            "form_id": null,
+                            "sub_questions": [
+                                {
+                                    "id": 2484,
+                                    "type": "qmls",
+                                    "title": "Linear",
+                                    "is_required": 0,
+                                    "from_lable": "Yes",
+                                    "to_lable": "No",
+                                    "from_to_number": "1,5",
+                                    "sub_question_id": 2485
+                                },
+                                {
+                                    "id": 2484,
+                                    "type": "qmgt",
+                                    "title": "Geo",
+                                    "is_required": 0,
+                                    "sub_question_id": 2486
+                                }
+                            ]
+                        },
+                        {
+                            "code": 3051,
+                            "title": "No",
+                            "form_id": null,
+                            "sub_questions": [
+                                {
+                                    "id": 2484,
+                                    "type": "qmte",
+                                    "title": "Remarks",
+                                    "is_required": 0,
+                                    "validation": {
+                                        "type": "",
+                                        "values": ""
+                                    },
+                                    "sub_question_id": 2487
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2488,
+                    "type": "qmpi",
+                    "title": "Capture",
+                    "is_required": 0,
+                    "validation": {
+                        "type": "QMPI-CAPTURE",
+                        "values": "1"
+                    }
+                },
+                {
+                    "id": 2489,
+                    "type": "qmpi",
+                    "title": "Upload",
+                    "is_required": 0,
+                    "validation": {
+                        "type": "QMPI-CAPTURE",
+                        "values": "0"
+                    }
+                }
+            ]
+        },
+        {
+            "form_id": 26,
+            "title": "Submit",
+            "description": "This form allows users to save the data collected with survey to server.",
+            "type": "SUBMIT",
+            "questions": [
+                {
+                    "id": 1510,
+                    "type": "qmte",
+                    "title": "Remarks",
+                    "is_required": 0,
+                    "validation": {
+                        "type": "",
+                        "values": ""
+                    }
+                }
+            ]
+        }
+    ],
+    "SurveyformQuestionArrays": [
+        {
+            "unique_id": 21,
+            "question_id": "2146",
+            "id": "2146",
+            "question_type": "qmtr",
+            "is_required": "0",
+            "dummy_is_required": "0",
+            "answer_id": "Retailer 2",
+            "answer": "Retailer 2",
+            "form_id": "",
+            "is_other": "",
+            "visual": "1",
+            "validationtype": "",
+            "validationvalue": "",
+            "parent": "1",
+            "subquestion": "0",
+            "subquestionid": ""
+        },
+        {
+            "unique_id": 22,
+            "question_id": "2147",
+            "id": "2147",
+            "question_type": "qmtr",
+            "is_required": "0",
+            "dummy_is_required": "0",
+            "answer_id": "Kurnool",
+            "answer": "Kurnool",
+            "form_id": "",
+            "is_other": "",
+            "visual": "1",
+            "validationtype": "",
+            "validationvalue": "",
+            "parent": "1",
+            "subquestion": "0",
+            "subquestionid": ""
+        },
+        {
+            "unique_id": 23,
+            "question_id": "2148",
+            "id": "2148",
+            "question_type": "qmtr",
+            "is_required": "0",
+            "dummy_is_required": "0",
+            "answer_id": "Andra Pradesh",
+            "answer": "Andra Pradesh",
+            "form_id": "",
+            "is_other": "",
+            "visual": "1",
+            "validationtype": "",
+            "validationvalue": "",
+            "parent": "1",
+            "subquestion": "0",
+            "subquestionid": ""
+        },
+        {
+            "unique_id": 24,
+            "question_id": "2149",
+            "id": "2149",
+            "question_type": "qmir",
+            "is_required": "0",
+            "dummy_is_required": "0",
+            "answer_id": "",
+            "answer": "",
+            "form_id": "",
+            "is_other": "",
+            "visual": "1",
+            "validationtype": "",
+            "validationvalue": "",
+            "parent": "1",
+            "subquestion": "0",
+            "subquestionid": ""
+        },
+        {
+            "unique_id": 25,
+            "question_id": "2150",
+            "id": "2150",
+            "question_type": "qmds",
+            "is_required": "0",
+            "dummy_is_required": "0",
+            "answer_id": "",
+            "answer": "",
+            "form_id": "",
+            "is_other": "",
+            "visual": "1",
+            "validationtype": "",
+            "validationvalue": "",
+            "parent": "1",
+            "subquestion": "1",
+            "subquestionid": "2151,2152,2153",
+            "other": ""
+        },
+        {
+            "unique_id": 26,
+            "question_id": "2150",
+            "id": "2151",
+            "question_type": "qmda",
+            "is_required": "0",
+            "dummy_is_required": "0",
+            "answered": "",
+            "answer_id": "",
+            "answer": "",
+            "form_id": "",
+            "is_other": "",
+            "validationtype": "",
+            "validationvalue": "",
+            "visual": "0",
+            "parent": "0",
+            "subquestion": "0",
+            "subquestionid": "",
+            "parent_option_id": "2894"
+        },
+        {
+            "unique_id": 27,
+            "question_id": "2150",
+            "id": "2152",
+            "question_type": "qmti",
+            "is_required": "0",
+            "dummy_is_required": "0",
+            "answered": "",
+            "answer_id": "",
+            "answer": "",
+            "form_id": "",
+            "is_other": "",
+            "validationtype": "",
+            "validationvalue": "",
+            "visual": "0",
+            "parent": "0",
+            "subquestion": "0",
+            "subquestionid": "",
+            "parent_option_id": "2895"
+        },
+        {
+            "unique_id": 28,
+            "question_id": "2150",
+            "id": "2153",
+            "question_type": "qmrb",
+            "is_required": "0",
+            "dummy_is_required": "0",
+            "answered": "",
+            "answer_id": "",
+            "answer": "",
+            "form_id": "",
+            "is_other": "",
+            "validationtype": "",
+            "validationvalue": "",
+            "visual": "0",
+            "parent": "0",
+            "subquestion": "0",
+            "subquestionid": "",
+            "parent_option_id": "2896"
+        },
+        {
+            "unique_id": 29,
+            "question_id": "2154",
+            "id": "2154",
+            "question_type": "qmrb",
+            "is_required": "0",
+            "dummy_is_required": "0",
+            "answer_id": "",
+            "answer": "",
+            "form_id": "",
+            "is_other": "",
+            "visual": "1",
+            "validationtype": "",
+            "validationvalue": "",
+            "parent": "1",
+            "subquestion": "1",
+            "subquestionid": "",
+            "other": ""
+        },
+        {
+            "unique_id": 30,
+            "question_id": "2155",
+            "id": "2155",
+            "question_type": "qmar",
+            "is_required": "0",
+            "dummy_is_required": "0",
+            "answer_id": "",
+            "answer": "",
+            "form_id": "",
+            "is_other": "",
+            "visual": "1",
+            "validationtype": "",
+            "validationvalue": "",
+            "parent": "1",
+            "subquestion": "0",
+            "subquestionid": ""
+        },
+        {
+            "unique_id": 31,
+            "question_id": "2156",
+            "id": "2156",
+            "question_type": "qmbc",
+            "is_required": "0",
+            "dummy_is_required": "0",
+            "answer_id": "",
+            "answer": "",
+            "form_id": "",
+            "is_other": "",
+            "visual": "1",
+            "validationtype": "",
+            "validationvalue": "",
+            "parent": "1",
+            "subquestion": "0",
+            "subquestionid": ""
+        }
+
+    ]
+}

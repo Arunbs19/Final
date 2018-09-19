@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttitle"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Title Text for all type of question"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtmandatory"
+            android:text="*"
+            android:layout_marginLeft="7dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#D50000"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

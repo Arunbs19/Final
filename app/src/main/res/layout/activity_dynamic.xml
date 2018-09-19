@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.afinal.Activity.Dynamic">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#3C8DBC">
+
+
+
+
+        <TextView
+            android:id="@+id/txt_visitdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Survey Form"
+            android:textSize="@dimen/default_size_18dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/imghome"
+            android:padding="13dp"
+            android:src="@drawable/btn_home"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lilayout">
+
+        <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+
+        </ViewFlipper>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/lilayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#EBEFF2"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical|right"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/default_size_18dp"
+            android:textStyle="bold"
+            android:textColor="#3C8DBC"
+            android:id="@+id/btnnext"
+            android:background="@drawable/next"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/default_size_18dp"
+            android:textStyle="bold"
+            android:textColor="#3C8DBC"
+            android:id="@+id/btnprevious"
+            android:background="@drawable/previous"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnsubmit"
+            android:background="@drawable/btsubmit"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnnext"
+            android:layout_toStartOf="@+id/btnnext" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

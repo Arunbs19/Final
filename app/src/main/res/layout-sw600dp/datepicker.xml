@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView9"
+        android:layout_weight="8"
+        android:src="@drawable/datepicker"
+        android:padding="8dp"
+       android:background="@color/colorAccent"
+        android:layout_gravity="center_vertical" />
+
+
+    <TextView
+        android:id="@+id/txtdatepicker"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:overlapAnchor="false"
+        android:background="@drawable/editable"
+        android:layout_weight="1"
+        android:textSize="@dimen/default_size_20dp"/>
+
+
+
+
+</LinearLayout>

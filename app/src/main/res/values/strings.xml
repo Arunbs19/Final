@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">B.S.A</string>
+    <string name="title_activity_login">Sign in</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <!--main-->
+    <string name="reg_heading">REGISTER</string>
+    <string name="reg_name">Name</string>
+    <string name="reg_age">Age</string>
+    <string name="reg_dob">D.O.B</string>
+    <string name="reg_address">Address</string>
+    <string name="reg_password">Set Password</string>
+    <string name="reg_save">save</string>
+    <!--list-->
+    <string name="li_Name">NAME</string>
+    <string name="li_Age">AGE</string>
+    <string name="li_Address">ADDRESS</string>
+    <string name="li_Image">IMAGE</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="place_api">AIzaSyBAYQAQjCzhTAeVPocKgqBeK53Uy4qxmlI</string>
+    <string name="direction_api">AIzaSyCKKYWKC57cv9LQRaHzXSaLjdkfl_Nj2zs</string>
+    <string name="str_rb_driving">Driving</string>
+    <string name="str_rb_bicycling">BiCycling</string>
+    <string name="str_rb_walking">Walking</string>
+
+    <string name="google_directions_key">AIzaSyATxk7i4myz1Q2PgleInHI1Z0ceSSx1fpQ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

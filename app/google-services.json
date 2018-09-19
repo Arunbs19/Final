@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "869118137257",
+    "project_id": "rational-axe-188206"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869118137257:android:65113d923c4e58e1",
+        "android_client_info": {
+          "package_name": "com.example.user.afinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869118137257-mde36tov9vsiikcs7vl2lc7p0ian6o67.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.afinal",
+            "certificate_hash": "070a31394716daf51dc40d282907acdaa9f7ced1"
+          }
+        },
+        {
+          "client_id": "869118137257-op2cs9e1ldames8m907498kpmdj922hj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqQIqIqbuhyNl05dtEZWCt90TivJ9eHVQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

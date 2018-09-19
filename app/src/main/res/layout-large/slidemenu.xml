@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_layout"
+    android:layout_width="380dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colortitle2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B.S.Arun"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/txtusername" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logout"
+            android:id="@+id/imglogout"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/colortitle2"/>
+
+    <RelativeLayout
+        android:id="@+id/lin_Dashboard"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:gravity="left|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:text="Dashboard"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#4A148C"/>
+
+    <RelativeLayout
+        android:id="@+id/lin_Listview"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="start|center_vertical"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:text="Listview"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#4A148C"/>
+
+    <RelativeLayout
+        android:id="@+id/lin_maps"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left|center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:text="maps"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#4A148C"/>
+
+    <RelativeLayout
+        android:id="@+id/lin_whatapp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left|center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:text="whatapp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#4A148C"/>
+
+    <RelativeLayout
+        android:id="@+id/lin_registerstion"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left|center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:text="registerstion"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#4A148C"
+
+      />
+
+    <RelativeLayout
+        android:id="@+id/lin_mapaddress"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left|center_vertical"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:text="mapaddress"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#4A148C"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/lin_chatroom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left|center_vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:text="Chat Room"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#4A148C"/>
+
+            </LinearLayout>
+
+
+
+

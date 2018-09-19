@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@drawable/vwhite" >
+
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textStyle="bold"
+        android:background="#C51162"
+        android:textSize="40sp"
+        android:textColor="@color/colorWhite"
+        android:paddingLeft="0sp"
+        android:padding="10sp"
+        android:textAlignment="center"
+        />
+    <View
+
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+    <View
+        android:layout_below="@id/txt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+    <RelativeLayout
+        android:id="@+id/reg_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        >
+
+
+   <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/color90blue"
+        android:layout_marginTop="2dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name"
+        android:padding="10dp"
+        android:hint="enter the name"
+        android:textColorHint="#F8BBD0"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:background="@drawable/editable"/>
+    <TextView
+        android:id="@+id/txt_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/color90blue"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/edt_name"/>
+    <AutoCompleteTextView
+        android:id="@+id/edt_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_age"
+
+        android:padding="10dp"
+        android:hint="enter the age"
+        android:textColorHint="#F8BBD0"
+        android:inputType="number"
+        android:maxLength="3"
+        android:background="@drawable/editable"/>
+    <TextView
+        android:id="@+id/txt_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D.O.B"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/color90blue"
+        android:layout_marginTop="3dp"
+
+        android:layout_below="@+id/edt_age"/>
+  <EditText
+      android:id="@+id/edt_dob"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+     android:layout_below="@id/txt_dob"
+      android:padding="10dp"
+      android:hint="enter the dob"
+      android:textColorHint="#F8BBD0"
+      android:inputType="date"
+      android:focusable="false"
+      android:background="@drawable/editable" />
+    <TextView
+        android:id="@+id/txt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="20dp"
+        android:textColor="@color/color90blue"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+
+        android:layout_below="@id/edt_dob"/>
+    <EditText
+        android:id="@+id/edt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_address"
+        android:padding="11dp"
+        android:hint="enter the address"
+        android:textColorHint="#F8BBD0"
+        android:inputType="textPostalAddress"
+        android:background="@drawable/editable"/>
+
+
+        <TextView
+        android:id="@+id/txt_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Set Password"
+        android:textSize="20dp"
+        android:textColor="@color/color90blue"
+            android:textStyle="bold"
+        android:layout_marginTop="3dp"
+            android:layout_below="@id/edt_address"/>
+    <EditText
+        android:id="@+id/edt_pass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_image"
+        android:padding="11dp"
+        android:hint="enter the password"
+        android:textColorHint="#F8BBD0"
+
+        android:inputType="textPostalAddress"
+        android:background="@drawable/editable"/>
+
+
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+
+                android:layout_below="@+id/edt_pass1"
+                android:layout_centerHorizontal="true" />
+
+
+            <Button
+                android:id="@+id/btn_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_insertpic"
+                android:text=""
+
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <Button
+           android:id="@+id/btn_save"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/save"
+           android:text="SAVE"
+           android:textColor="@color/colorWhite"
+           android:textSize="26dp"
+           android:layout_marginBottom="8dp"
+           android:layout_marginLeft="80dp"
+           android:layout_marginRight="80dp"
+           android:layout_alignParentBottom="true"
+           />
+
+
+</RelativeLayout>
+

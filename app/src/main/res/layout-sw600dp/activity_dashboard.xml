@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vwhite"
+    tools:context=".Activity.DashboardActivity">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#9C27B0"
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/txt_salesorder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Dashboard"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginRight="38dp"
+            android:gravity="center"
+            />
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/linear11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+<TextView
+    android:id="@+id/dblogindata"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="25dp"
+    />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:id="@+id/imageView4"
+        android:background="@drawable/under_construction"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/img_menu"
+        android:background="@drawable/menu"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="New Button"
+        android:id="@+id/button2"
+        android:background="#fff"
+        android:layout_above="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
+</RelativeLayout>
+

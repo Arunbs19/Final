@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--DEFAULT-->
+    <dimen name="default_size_1dp">1dp</dimen>
+    <dimen name="default_size_2dp">2dp</dimen>
+    <dimen name="default_size_3dp">3dp</dimen>
+    <dimen name="default_size_minus_3dp">-3dp</dimen>
+    <dimen name="default_size_minus_4dp">-4dp</dimen>
+    <dimen name="default_size_4dp">4dp</dimen>
+    <dimen name="default_size_5dp">5dp</dimen>
+    <dimen name="default_size_6dp">6dp</dimen>
+    <dimen name="default_size_7dp">7dp</dimen>
+    <dimen name="default_size_8dp">8dp</dimen>
+    <dimen name="default_size_10dp">10dp</dimen>
+
+    <dimen name="default_size_12dp">12dp</dimen>
+    <dimen name="default_size_15dp">15dp</dimen>
+    <dimen name="default_size_18dp">18dp</dimen>
+    <dimen name="default_size_20dp">20dp</dimen>
+    <dimen name="default_size_25dp">25dp</dimen>
+    <dimen name="default_size_36dp">36dp</dimen>
+    <dimen name="default_size_50dp">50dp</dimen>
+    <dimen name="default_size_60dp">60dp</dimen>
+    <dimen name="default_size_45dp">45dp</dimen>
+    <dimen name="default_btn_size_40dp">40dp</dimen>
+    <dimen name="default_size_150dp">150dp</dimen>
+    <dimen name="default_size_75dp">75dp</dimen>
+
+    <dimen name="default_btn_size_30dp">30dp</dimen>
+    <dimen name="default_btn_size_37dp">37dp</dimen>
+    <dimen name="default_btn_size_90dp">90dp</dimen>
+    <dimen name="default_search_btn_size_105dp">105dp</dimen>
+
+
+    <dimen name="default_txtsize_12sp">12sp</dimen>
+    <dimen name="default_txtsize_14sp">14sp</dimen>
+    <dimen name="default_txtsize_16sp">16sp</dimen>
+    <dimen name="default_txtsize_18sp">18sp</dimen>
+
+
+    <!-- LOADING SCREEN -->
+    <dimen name="loading_width_size">350dp</dimen>
+    <dimen name="loading_height_size">150dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- Header Footer -->
+    <dimen name="header_footer_icon_top_padding">6dp</dimen>
+    <dimen name="header_footer_icon_size">30dp</dimen>
+    <dimen name="header_footer_size">45dp</dimen>
+
+    <!-- Footer -->
+    <dimen name="footer_text_size">25sp</dimen>
+    <dimen name="footer_bottom_padding">2dp</dimen>
+
+    <!-- Main Menu -->
+    <dimen name="mm_icon_bg_size">120dp</dimen>
+    <dimen name="mm_icon_size">60dp</dimen>
+    <dimen name="mm_icon_top_margin">15dp</dimen>
+
+    <!-- LOGIN SCREEN -->
+    <dimen name="login_edittext_size">40dp</dimen>
+    <dimen name="login_icon_size">60dp</dimen>
+    <dimen name="login_relative_edittext_size">100dp</dimen>
+
+    <!--ROW SCREEN-->
+    <dimen name="row_img_width_size_135dp">135dp</dimen>
+    <dimen name="row_img_height_size_125dp">125dp</dimen>
+    <dimen name="row_img_margin_left_size">64dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+</resources>
+
